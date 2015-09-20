@@ -56,9 +56,7 @@ namespace SumOfElementsTestsProject
         [ExpectedException(typeof(ArgumentNullException))]
         public void CountSumOfElements_SumOfNull_ArgumentNullException()
         {
-            int[] array = null;
-
-            int actualResult = Sum.CountSumOfElements(array);
+            int actualResult = Sum.CountSumOfElements(null);
         }
 
 
