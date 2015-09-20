@@ -16,9 +16,12 @@ namespace SumOfElements
                 return 0;
 
             int sum = 0;
-            foreach (int element in array)
-                sum += element;
-            return sum;
+            checked
+            {
+                foreach (int element in array)
+                    sum += element;
+                return sum;
+            }
         }
     }
 }
