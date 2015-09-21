@@ -18,7 +18,7 @@ namespace SumOfElements
             int sum = 0;
             checked
             {
-                foreach (int element in array)
+                foreach (var element in array)
                     sum += element;
                 return sum;
             }
