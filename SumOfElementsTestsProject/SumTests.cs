@@ -63,7 +63,7 @@ namespace SumOfElementsTestsProject
         [ExpectedException(typeof(OverflowException))]
         public void CountSumOfElements_SumOfMaxIntAnd1_OverflowException()
         {
-            Sum.CountSumOfElements(new[] { int.MaxValue, 1 });
+           Sum.CountSumOfElements(new [] { int.MaxValue, 1});
         }
 
     }
