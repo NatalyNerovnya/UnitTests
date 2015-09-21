@@ -56,11 +56,15 @@ namespace SumOfElementsTestsProject
         [ExpectedException(typeof(ArgumentNullException))]
         public void CountSumOfElements_SumOfNull_ArgumentNullException()
         {
-            int[] array = null;
-
-            int actualResult = Sum.CountSumOfElements(array);
+            Sum.CountSumOfElements(null);
         }
 
+        [TestMethod]
+        [ExpectedException(typeof(OverflowException))]
+        public void CountSumOfElements_SumOfMaxIntAnd1_OverflowException()
+        {
+            Sum.CountSumOfElements(new[] { int.MaxValue, 1 });
+        }
 
     }
 }
